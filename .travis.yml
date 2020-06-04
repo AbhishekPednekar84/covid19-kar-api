@@ -1,13 +1,16 @@
 language: python
 python:
-  - "3.7"
+- '3.7'
 install:
-  - pip install -r requirements.txt
+- pip install -r requirements.txt
 script:
-  - pytest
+- pytest
 notifications:
   email:
     recipients:
-      - abhi_ap@hotmail.com
+    - abhi_ap@hotmail.com
     on_success: always
     on_failure: always
+  slack:
+    rooms:
+      secure: mY28jHrolKiXitMNZTkqjcyyufPrIY44VSyyLEECZMrLtPz+izpwwOCMZ/dsDaOTCHwfzf2GhAL0tCE6oIR8UM8pcWcnVcfHHbjKPbVo363mAcDmxbibACek4M9Hz8WYirM+82FUX8199K1IzkdLIS34ss06PoCKb2rJ9x3BqRqS1CAYeDDOjfVA10Mpd1n1fglFQx3dDz9IsBE2UKjjQGmwVb7AnP46Ly2wwSKgpq36KUVOpUgkzyn1mHMK4/VXa3dy8HSixWMt/O/iZdRu+WtnIap9fmjv059ZjE7OIo8K6qTh04oAcNWja+w8dZy4UAeKa+EQ4Kc/YqlHig3o1OmUziqVhAu5MFASTyZfmYM6ktVBBL/rsxtxf83upui1EWHoF0+1Sw+6Z6/GwBe7dADUTRpUZmz9TYTi3hEGqodAg25ihp6NKLVcuTz85p9hrADE0Zj82SB6Q3Uy+gnkkNNJ/uDUSAbmAxdLdyfum1zqqKcV+rgFQLCX1YV4uL0BK7oEDpQqkA4V3JAqcvUk+3R1uO5oN/QluR0AcNFmvigxgLFlU+X5zFwMIXKoRyQ5CRnTeEhdLScGEz7olMEWJ4icPUbBwgr2bEJZuHUFUVu/Jau98U34LiZ509ochz2oLS+Aw21LoWieAvqyDVuA6kb4Njbs9CNV7WrYzRs60JI=
